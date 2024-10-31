@@ -5,11 +5,11 @@ local map = vim.keymap.set
 -- For conciseness
 local opts = { noremap = true, silent = true }
 -- quit file
-vim.keymap.set("n", "<C-q>", "<cmd> q <CR>", opts)
+map("n", "<C-q>", "<cmd> q <CR>", opts)
 
 -- Navigate buffers
-vim.keymap.set("n", "<Tab>", ":bnext<CR>", opts)
+map("n", "<Tab>", ":bnext<CR>", opts)
 vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>", opts)
 -- Comment
-map("n", "<leader>/", "gcc", { desc = "toggle comment", remap = true })
-map("v", "<leader>/", "gc", { desc = "toggle comment", remap = true })
+map("n", "<C-t>", "gcc", { desc = "toggle comment", remap = true })
+map("v", "<C-t>", "gc", { desc = "toggle comment", remap = true })
