@@ -9,7 +9,7 @@ map("n", "<C-q>", "<cmd> q <CR>", opts)
 
 -- Navigate buffers
 map("n", "<Tab>", ":bnext<CR>", opts)
-vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>", opts)
--- Comment
+map("n", "<S-Tab>", ":bprevious<CR>", opts)
+-- -- Comment
 map("n", "<C-t>", "gcc", { desc = "toggle comment", remap = true })
 map("v", "<C-t>", "gc", { desc = "toggle comment", remap = true })
